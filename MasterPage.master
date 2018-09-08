@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"   %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+      <style>
+        
+        nav{
+           
+            font-family:'Times New Roman', Times, serif;
+            font-size:medium;
+            width=100%;
+           
+        }
+         body {
+            background-image: url('images/bg3.jpg');
+            font-family:'Times New Roman', Times, serif;
+            color:cadetblue;
+            
+        }
+         
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+    <!--================Header Menu Area =================-->
+    <header style="background-color: rgba(53, 61, 46, 0.99); border: hidden; opacity: 0.6; "> 
+            
+        <nav class="navbar navbar-inverse">
+            <a class="navbar-brand" href="#">Cryptnet</a>
+            
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav">
+                    <li ><a href="HomePage.html">Home</a></li>
+                    <li><a href="About.aspx">About Us</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu bg-primary" style="background-color:cadetblue">
+                            <li><a href="#"><strong><b>Text Encryption</b> </strong></a></li>
+ 
+<li><a href="#"><strong>Text Decryption</strong></a></li>
+                                                   
+                        </ul>
+                    </li>
+                    <li><a href="Career.aspx">Career</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a  href="logout.aspx" class="btn btn-xs btn-flat">Sign Out </a></li>
+                </ul>
+             
+            </div>
+        </nav>
+
+    </header>
+    <!--=====================End of Headder===================================================-->
+
+        
+    
+         
+        <div>
+                      
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <footer class="page-footer font-small unique-color-dark pt-4" style="background-color:cadetblue;">
+        <!-- Footer Elements -->
+        
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            © 2018 Copyright: DeadWalker Infosoft
+            
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+     
+</body>
+</html>
